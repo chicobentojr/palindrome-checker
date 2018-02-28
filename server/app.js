@@ -22,6 +22,10 @@ app.post('/ispalindrome', (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send("The server is ready!");
+});
+
 app.listen(4000, () => {
   console.log('Server listening on port 4000!');
 });
